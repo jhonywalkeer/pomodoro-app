@@ -1,4 +1,4 @@
-import { IsIn, IsNotEmpty } from "class-validator";
+import { IsIn, IsNotEmpty } from 'class-validator';
 
 export class CreateTodoDto {
   @IsNotEmpty()

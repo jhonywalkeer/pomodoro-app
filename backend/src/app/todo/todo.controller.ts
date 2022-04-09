@@ -34,7 +34,10 @@ export class TodoController {
   }
 
   @Put(':id')
-  async update(@Param('id', new ParseUUIDPipe()) id: string, @Body() body: UpdateTodoDto) {
+  async update(
+    @Param('id', new ParseUUIDPipe()) id: string,
+    @Body() body: UpdateTodoDto,
+  ) {
     return await this.todoService.update(id, body);
   }
 
