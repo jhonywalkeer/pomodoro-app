@@ -11,8 +11,8 @@ import {
   Put,
 } from '@nestjs/common';
 import { ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
-import { BadRequestSwagger } from 'src/helpers/swagger/bad-request.swagger';
-import { NotFoundSwagger } from 'src/helpers/swagger/not-found.swagger';
+import { BadRequestSwagger } from '../../helpers/swagger/bad-request.swagger';
+import { NotFoundSwagger } from '../../helpers/swagger/not-found.swagger';
 import { CreateTodoDto } from './dto/create-todo.dto';
 import { UpdateTodoDto } from './dto/update-todo.dto';
 import { CreateTodoSwagger } from './swagger/create-todo.swagger';
