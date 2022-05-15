@@ -1,9 +1,9 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { TodoEntity } from './entities/todo.entity';
-import { TodoController } from './todo.controller';
-import { TodoService } from './todo.service';
-import { CreateTodoDto } from './dto/create-todo.dto';
-import { UpdateTodoDto } from './dto/update-todo.dto';
+import { TodoEntity } from '../../src/shared/entities/todo.entity';
+import { TodoController } from '../../src/app/todo/todo.controller';
+import { TodoService } from '../../src/app/todo/todo.service';
+import { CreateTodoDto } from '../../src/shared/dto/create-todo.dto';
+import { UpdateTodoDto } from '../../src/shared/dto/update-todo.dto';
 
 const todoEntityList: TodoEntity[] = [
   new TodoEntity({ id: '1', task: 'task-1', isDone: 0 }),
