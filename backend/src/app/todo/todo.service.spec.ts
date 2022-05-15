@@ -1,10 +1,10 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { getRepositoryToken } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { TodoService } from '../../src/app/todo/todo.service';
-import { TodoEntity } from '../../src/shared/entities/todo.entity';
+import { TodoService } from './todo.service';
+import { TodoEntity } from '../../shared/entities/todo.entity';
 import { NotFoundException } from '@nestjs/common';
-import { CreateTodoDto } from '../../src/shared/dto/create-todo.dto';
+import { CreateTodoDto } from '../../shared/dto/create-todo.dto';
 
 const todoEntityList: TodoEntity[] = [
   new TodoEntity({ task: 'task-1', isDone: 0 }),
